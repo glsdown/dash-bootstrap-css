@@ -10050,3 +10050,113 @@ a.text-dark:hover, a.text-dark:focus {
 .dash-bootstrap .rc-slider-mark-text.rc-slider-mark-text-active {
   color: #343a40;
 }
+
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+  width: 100%;
+  color: #212529;
+  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table:hover {
+  color: #212529;
+}
+
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr,
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th,
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  background-color: transparent;
+}
+
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  font-weight: bold;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6 !important;
+}
+
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th,
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  text-align: left;
+  padding: 0.75rem;
+  display: table-cell;
+  white-space: normal;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  vertical-align: top;
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.dash-bootstrap .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.dash-bootstrap .db-table-striped .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dash-bootstrap .db-table-hover .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.dash-bootstrap .db-table-sm .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th,
+.dash-bootstrap .db-table-sm .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  padding: 0.3rem;
+}
+
+.dash-bootstrap .db-table-bordered .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th,
+.dash-bootstrap .db-table-bordered .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  border-left: 1px solid #dee2e6 !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.dash-bootstrap .db-table-borderless .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th,
+.dash-bootstrap .db-table-borderless .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  border: 0 !important;
+}
+
+.dash-bootstrap .db-thead-dark .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+}
+
+.dash-bootstrap .db-thead-light .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.dash-bootstrap .db-table-dark .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.dash-bootstrap .db-table-dark .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table:hover {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.dash-bootstrap .db-table-dark .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th,
+.dash-bootstrap .db-table-dark .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  border-color: #454d55;
+}
+
+.dash-bootstrap .db-table-dark.db-table-bordered .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+  border: 0;
+}
+
+.dash-bootstrap .db-table-dark.db-table-striped .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tbody tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dash-bootstrap .db-table-dark.db-table-hover .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tbody tr:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.075);
+}
