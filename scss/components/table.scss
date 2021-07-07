@@ -1,0 +1,190 @@
+// .db-thead-light // FIXME - has rogue borders
+// .db-thead-dark // FIXME - has rogue borders
+// TODO:
+// .db-table-responsive
+// table colours
+
+.dash-bootstrap {
+    .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+        // Basic Bootstrap Table
+
+        table {
+            width: 100%;
+            color: $table-color;
+            background-color: $table-bg;
+            @include hover() {
+                color: $table-color;
+                background-color: $table-bg;
+            }
+            margin-bottom: $spacer;
+            font-family: $font-family-base;
+            @include font-size($font-size-base);
+            font-weight: $font-weight-base;
+            line-height: 1.5;
+        }
+
+        @if $table-bg != null {
+            tr,
+            th,
+            td {
+                background-color: $table-bg;
+            }
+        } @else {
+            tr,
+            th,
+            td {
+                background-color: transparent;
+            }
+        }
+
+        th {
+            font-weight: bold;
+            vertical-align: bottom;
+            border-bottom: (2 * $table-border-width) solid $table-border-color !important;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: $table-cell-padding;
+            display: table-cell;
+            white-space: normal;
+            border-left: none !important;
+            border-right: none !important;
+        }
+
+        td {
+            vertical-align: top;
+            border-top: $table-border-width solid $table-border-color !important;
+        }
+
+        tbody + tbody {
+            border-top: (2 * $table-border-width) solid $table-border-color;
+        }
+    }
+
+    // Zebra-striping
+    //
+    // Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+    .db-table-striped {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tbody tr:nth-of-type(#{even}) {
+            background-color: $table-accent-bg;
+        }
+    }
+
+    // Hover effect
+    //
+    // Placed here since it has to come after the potential zebra striping
+
+    .db-table-hover {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tbody tr {
+            @include hover() {
+                color: $table-hover-color;
+                background-color: $table-hover-bg;
+            }
+        }
+    }
+
+    //
+    // Condensed table w/ half padding
+    //
+
+    .db-table-sm {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+            th,
+            td {
+                padding: $table-cell-padding-sm;
+            }
+        }
+    }
+
+    // Border versions
+    //
+    // Add or remove borders all around the table and between all the columns.
+
+    .db-table-bordered {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+            th,
+            td {
+                border-left: $table-border-width solid $table-border-color !important;
+                border-right: $table-border-width solid $table-border-color !important;
+            }
+        }
+    }
+
+    .db-table-borderless {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+            th,
+            td {
+                border: 0 !important;
+            }
+        }
+    }
+
+    // Dark styles
+    //
+    // Same table markup, but inverted color scheme: dark background and light text.
+
+    .db-thead-dark {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+            th {
+                color: $table-dark-color;
+                background-color: $table-dark-bg;
+                border-color: $table-dark-border-color;
+            }
+        }
+    }
+    .db-thead-light {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+            th {
+                color: $table-head-color;
+                background-color: $table-head-bg;
+                border-color: $table-border-color;
+            }
+        }
+    }
+
+    .db-table-dark {
+        .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+            table {
+                color: $table-dark-color;
+                background-color: $table-dark-bg;
+                @include hover() {
+                    color: $table-dark-color;
+                    background-color: $table-dark-bg;
+                }
+            }
+
+            th,
+            td {
+                border-color: $table-dark-border-color;
+            }
+        }
+
+        &.db-table-bordered {
+            .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+                border: 0;
+            }
+        }
+
+        &.db-table-striped {
+            .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+                tbody tr:nth-of-type(#{even}) {
+                    background-color: $table-dark-accent-bg;
+                }
+            }
+        }
+
+        &.db-table-hover {
+            .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+                tbody tr {
+                    @include hover() {
+                        color: $table-dark-hover-color;
+                        background-color: $table-dark-hover-bg;
+                    }
+                }
+            }
+        }
+    }
+}
